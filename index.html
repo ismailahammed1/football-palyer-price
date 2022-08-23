@@ -15,8 +15,9 @@
 <body>
     <header>
         <section class="titel-section">
-            <h1 class="text-7xl text-center pt-8 text-orange-400">Football Player List</h1>
-            <p class="  text-center text-orange-300 mt-5 ">Football, as we all know, has changed, Club football is more
+            <h1 class="text-7xl text-center pt-8 text-[#FF5E19] ordinal ">
+                Football Player List</h1>
+            <p class="  text-center text-black-300 mt-5 ">Football, as we all know, has changed, Club football is more
                 popular than International football.<br> Fans around the globe support their club in numbers. The
                 superiority of Spanish clubs over the world is at another level, <br>and both Barca and Real have proved
                 that. Along with them, we have Premier League giants, German champions, Italian champions.</p>
@@ -40,7 +41,7 @@
                                 <p>Goalkeeper <span>jdjf</span></p>
                                 <div class="card-actions">
                                     <button onclick="playerName(this)" id="select-btn"
-                                        class="btn btn-wide btn-warning">Select</button>
+                                        class="btn btn-wide btn-warning border-3 shadow-lg shadow-blue-500/50  border-gray-600">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +56,7 @@
                                 </p>
                                 <div class="card-actions">
                                     <button onclick="playerName(this)" id="select-btn"
-                                        class="btn btn-wide btn-warning">Select</button>
+                                        class="btn btn-wide btn-warning border-3 shadow-lg shadow-blue-500/50  border-gray-600">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +72,7 @@
                                 </p>
                                 <div class="card-actions">
                                     <button onclick="playerName(this)" id="select-btn"
-                                        class="btn btn-wide btn-warning">Select</button>
+                                        class="btn btn-wide btn-warning border-3 shadow-lg shadow-blue-500/50  border-gray-600">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -86,7 +87,7 @@
                                 </p>
                                 <div class="card-actions">
                                     <button onclick="playerName(this)" id="select-btn"
-                                        class="btn btn-wide btn-warning">Select</button>
+                                        class="btn btn-wide btn-warning border-3 shadow-lg shadow-blue-500/50  border-gray-600">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +101,7 @@
                                 <p>Centre-Back</p>
                                 <div class="card-actions">
                                     <button onclick="playerName(this)" id="select-btn"
-                                        class="btn btn-wide btn-warning">Select</button>
+                                        class="btn btn-wide btn-warning border-3 shadow-lg shadow-blue-500/50  border-gray-600">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +115,7 @@
                                 <p>Right-Back</p>
                                 <div class="card-actions">
                                     <button onclick="playerName(this)" id="select-btn"
-                                        class="btn btn-wide btn-warning">Select</button>
+                                        class="btn btn-wide btn-warning border-3 shadow-lg shadow-blue-500/50  border-gray-600">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +130,7 @@
                                 </p>
                                 <div class="card-actions">
                                     <button onclick="playerName(this)" id="select-btn"
-                                        class="btn btn-wide btn-warning">Select</button>
+                                        class="btn btn-wide btn-warning border-3 shadow-lg shadow-blue-500/50  border-gray-600">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -144,7 +145,7 @@
                                 </p>
                                 <div class="card-actions">
                                     <button onclick="playerName(this)" id="select-btn"
-                                        class="btn btn-wide btn-warning">Select</button>
+                                        class="btn btn-wide btn-warning border-3 shadow-lg shadow-blue-500/50  border-gray-600">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -159,7 +160,7 @@
                                 </p>
                                 <div class="card-actions">
                                     <button onclick="playerName(this)" id="select-btn"
-                                        class="btn btn-wide btn-warning">Select</button>
+                                        class="btn btn-wide btn-warning border-3 shadow-lg shadow-blue-500/50  border-gray-600">Select</button>
                                 </div>
                             </div>
                         </div>
@@ -192,12 +193,12 @@
                     <div class="budget-list">
                         <h1 class="select-part text-center pt-2 text-purple-600">Budget</h1>
                         <div class="text-center mt-6">
-                            <span class="w-full max-w-xs">Per Player: </span> <input id="player-cost" type="number"
+                            <span class="w-full max-w-xs"></span> <input id="player-cost" type="number"
                                 placeholder="Type here"
                                 class="input-filed input input-bordered input-success w-full max-w-xs" />
 
                             <button id="calculated"
-                                class="btn btn-wide btn-warning my-7 justify-center">Calculated</button>
+                                class="btn btn-wide btn-warning my-7 justify-center border-3 shadow-lg shadow-blue-500/50  border-gray-600">Calculated</button>
 
                             <h1>Player Expenses $<span id="player-expenses" class="text-purple-600">00</span></h1>
                         </div>
@@ -218,7 +219,8 @@
                                     li=document.createElement("li"); li.appendChild(document.createTextNode("Four"));
                                     ul.appendChild(li); } />
                             </div>
-                            <button id="total-calculated" class="btn btn-wide btn-warning my-7">Calculated
+                            <button id="total-calculated"
+                                class="btn btn-wide btn-warning my-7 border-3 shadow-lg shadow-blue-500/50  border-gray-600">Calculated
                                 Total</button>
 
                             <h1>Total Expenses $ <span id="total-expenses" class="text-purple-600">00</span></h1>

@@ -65,17 +65,19 @@ document.getElementById('calculated').addEventListener('click', function () {
     const playerCostInput = document.getElementById('player-cost');
     const playerCost = playerCostInput.value;
 
-    const totelPlayer = document.getElementById('total-plyer').innerText;
+    const totalPlayer = document.getElementById('total-plyer').innerText;
 
     const playerExpenses = document.getElementById('player-expenses');
 
-    const cost = playerCost * totelPlayer;
+    const cost = playerCost * totalPlayer;
 
     playerExpenses.innerText = cost;
 })
+//--------------------- player price calculated ----------------//
+
 // ----------------price calculated  end----------------//
 
-// ---------------- total calculeted start---------------//
+// ---------------- total cost calculeted start---------------//
 document.getElementById('total-calculated').addEventListener('click', function () {
     const managerCostInput = document.getElementById('manager-cost').value;
     const managerCost = parseInt(managerCostInput);
@@ -88,4 +90,4 @@ document.getElementById('total-calculated').addEventListener('click', function (
     const totalExpenses = document.getElementById('total-expenses');
     totalExpenses.innerText = playerExpenses + managerCost + coachCost;
 })
-// ---------------- total calculeted end---------------//
+// ---------------- total cost calculeted end---------------//
