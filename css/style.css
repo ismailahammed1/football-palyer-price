@@ -3,12 +3,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: gray;
-    font-family: 'Berkshire Swash', cursive;
-}
-
-.titel-section>h1 {
-    color: #FF5E19;
 }
