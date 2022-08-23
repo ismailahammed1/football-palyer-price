@@ -60,3 +60,17 @@ function playerName(element) {
 
 }
 
+//--------------------- player price calculated ----------------//
+document.getElementById('calculated').addEventListener('click', function () {
+    const playerCostInput = document.getElementById('player-cost');
+    const playerCost = playerCostInput.value;
+
+    const totelPlayer = document.getElementById('total-plyer').innerText;
+
+    const playerExpenses = document.getElementById('player-expenses');
+
+    const cost = playerCost * totelPlayer;
+
+    playerExpenses.innerText = cost;
+})
+// ----------------price calculated  end----------------//
