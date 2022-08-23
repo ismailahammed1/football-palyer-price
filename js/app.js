@@ -73,7 +73,7 @@ document.getElementById('calculated').addEventListener('click', function () {
 
     playerExpenses.innerText = cost;
 })
-//--------------------- player price calculated ----------------//
+
 
 // ----------------price calculated  end----------------//
 
