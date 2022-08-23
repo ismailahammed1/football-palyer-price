@@ -74,3 +74,18 @@ document.getElementById('calculated').addEventListener('click', function () {
     playerExpenses.innerText = cost;
 })
 // ----------------price calculated  end----------------//
+
+// ---------------- total calculeted start---------------//
+document.getElementById('total-calculated').addEventListener('click', function () {
+    const managerCostInput = document.getElementById('manager-cost').value;
+    const managerCost = parseInt(managerCostInput);
+    const coachCostInput = document.getElementById('coach-cost').value;
+    const coachCost = parseInt(coachCostInput);
+
+    const playerExpensesInput = document.getElementById('player-expenses').innerText;
+    const playerExpenses = parseInt(playerExpensesInput);
+
+    const totalExpenses = document.getElementById('total-expenses');
+    totalExpenses.innerText = playerExpenses + managerCost + coachCost;
+})
+// ---------------- total calculeted end---------------//
