@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Football Player List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- daisyUI and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <section class="titel-section">
+            <h1 class="text-7xl text-center pt-8 text-orange-400">Football Player List</h1>
+            <p class="  text-center text-orange-300 mt-5 ">Football, as we all know, has changed, Club football is more
+                popular than International football.<br> Fans around the globe support their club in numbers. The
+                superiority of Spanish clubs over the world is at another level, <br>and both Barca and Real have proved
+                that. Along with them, we have Premier League giants, German champions, Italian champions.</p>
+        </section>
+    </header>
+    <main>
+        <section>
+            <div class="grid grid-cols-3 gap-4">
+                <!-- main grid 2 part -->
+
+                <div class="col-span-2 bg-slate-50 pt-8">
+                    <!-- images card part -->
+                    <div class="grid grid-cols-3 gap-4 pl-2 pr-2">
+                        <!-- 1 first single images part -->
+                        <div class="card w-65 bg-base-100 shadow-xl">
+                            <figure class="px-1 pt-1">
+                                <img src="images/alisson-becker.jpg" alt="Shoes" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 id="" class="card-title">Alisson Becker</h2>
+                                <p>Goalkeeper <span>jdjf</span></p>
+                                <div class="card-actions">
+                                    <button onclick="playerName(this)" id="select-btn"
+                                        class="btn btn-wide btn-warning">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2--------- -->
+                        <div class="card w-65 bg-base-100 shadow-xl">
+                            <figure class="px-1 pt-1">
+                                <img src="images/neymar.jpg" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 id="" class="card-title player-name">Neymer</h2>
+                                <p>Left Winger
+                                </p>
+                                <div class="card-actions">
+                                    <button onclick="playerName(this)" id="select-btn"
+                                        class="btn btn-wide btn-warning">Select</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ------3---------- -->
+                        <div class="card w-65 bg-base-100 shadow-xl">
+                            <figure class="px-1 pt-1">
+                                <img src="images/Rodrygo.jpg" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 id="" class="card-title player-name">Rodrygo</h2>
+                                <p>Right-Winger
+                                </p>
+                                <div class="card-actions">
+                                    <button onclick="playerName(this)" id="select-btn"
+                                        class="btn btn-wide btn-warning">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----4------- -->
+                        <div class="card w-65 bg-base-100 shadow-xl">
+                            <figure class="px-1 pt-1">
+                                <img src="images/Gabriel Jesus.jpg" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 id="" class="card-title player-name">Gabriel Jesus</h2>
+                                <p>Centre-Forward
+                                </p>
+                                <div class="card-actions">
+                                    <button onclick="playerName(this)" id="select-btn"
+                                        class="btn btn-wide btn-warning">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ----------5---------- -->
+                        <div class="card w-65 bg-base-100 shadow-xl">
+                            <figure class="px-1 pt-1">
+                                <img src="images/silvachile.jpg" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 id="" class="card-title player-name">silva</h2>
+                                <p>Centre-Back</p>
+                                <div class="card-actions">
+                                    <button onclick="playerName(this)" id="select-btn"
+                                        class="btn btn-wide btn-warning">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --------6---------- -->
+                        <div class="card w-65 bg-base-100 shadow-xl">
+                            <figure class="px-1 pt-1">
+                                <img src="images/Marquinhos-1.jpg" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 id="" class="card-title player-name">Marquinhos</h2>
+                                <p>Right-Back</p>
+                                <div class="card-actions">
+                                    <button onclick="playerName(this)" id="select-btn"
+                                        class="btn btn-wide btn-warning">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --------7---------- -->
+                        <div class="card w-65 bg-base-100 shadow-xl">
+                            <figure class="px-1 pt-1">
+                                <img src="images/casemiro1 (2).jpg"" class=" rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 id="" class="card-title player-name">casemiro</h2>
+                                <p>Central Midfield
+                                </p>
+                                <div class="card-actions">
+                                    <button onclick="playerName(this)" id="select-btn"
+                                        class="btn btn-wide btn-warning">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --------8---------- -->
+                        <div class="card w-65 bg-base-100 shadow-xl">
+                            <figure class="px-1 pt-1">
+                                <img src="images/vini.jpg" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 id="" class="card-title player-name">vini</h2>
+                                <p>left-Winger
+                                </p>
+                                <div class="card-actions">
+                                    <button onclick="playerName(this)" id="select-btn"
+                                        class="btn btn-wide btn-warning">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- --------9---------- -->
+                        <div class="card w-65 bg-base-100 shadow-xl">
+                            <figure class="px-1 pt-1">
+                                <img src="images/Bruno-Guimaraes-Brazil.jpg" alt="" class="rounded-xl" />
+                            </figure>
+                            <div class="card-body items-center text-center">
+                                <h2 id="" class="card-title player-name">Bruno-Guimaraes</h2>
+                                <p>Attacking Midfield
+                                </p>
+                                <div class="card-actions">
+                                    <button onclick="playerName(this)" id="select-btn"
+                                        class="btn btn-wide btn-warning">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- player list part -->
+                <div class="mt-7 ">
+                    <div class="player-list">
+                        <div class="text-center flex justify-center pt-2">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-lg">Selected Player</th>
+                                        <th><span class="text-purple-600 text-lg" id="total-plyer">0</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="name-list" onclick="fiveplayerlist()">
+                                    <!-- innerHTML -->
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <!-- ---------------------------------------------------- -->
+                    <!-- calculated part -->
+                    <div class="budget-list">
+                        <h1 class="select-part text-center pt-2 text-purple-600">Budget</h1>
+                        <div class="text-center mt-6">
+                            <span class="w-full max-w-xs">Per Player: </span> <input id="player-cost" type="number"
+                                placeholder="Type here"
+                                class="input-filed input input-bordered input-success w-full max-w-xs" />
+
+                            <button id="calculated"
+                                class="btn btn-wide btn-warning my-7 justify-center">Calculated</button>
+
+                            <h1>Player Expenses $<span id="player-expenses" class="text-purple-600">00</span></h1>
+                        </div>
+
+
+                        <div class="text-center mt-6">
+                            <div>
+
+                                <span class="w-full max-w-xs">Manager: <br> </span> <input id="manager-cost"
+                                    type="number" placeholder="Type here"
+                                    class="input-filed input input-bordered input-success w-full max-w-xs mt-1" />
+                            </div>
+                            <div class="mt-7">
+                                <span class="w-full max-w-xs mt-8">Coach: <br> </span> <input id="coach-cost"
+                                    type="number" placeholder="Type here"
+                                    class="input-filed input input-bordered input-success w-full max-w-xs" function
+                                    function1() { var ul=document.getElementById("list"); var
+                                    li=document.createElement("li"); li.appendChild(document.createTextNode("Four"));
+                                    ul.appendChild(li); } />
+                            </div>
+                            <button id="total-calculated" class="btn btn-wide btn-warning my-7">Calculated
+                                Total</button>
+
+                            <h1>Total Expenses $ <span id="total-expenses" class="text-purple-600">00</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1 class="text-center text-amber-300">© copyright Ismail and programming </h1>
+    </footer>
+    <script src="js/utility.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
