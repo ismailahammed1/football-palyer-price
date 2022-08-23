@@ -35,8 +35,7 @@ function displayPlayer(selectedPlayers) {
 
     }
 }
-
-
+//----------funtion playerName--------------///
 function playerName(element) {
 
     const playerNames = element.parentNode.parentNode.children[0].innerText;
@@ -59,6 +58,8 @@ function playerName(element) {
     }
 
 }
+//----------funtion playerName--------------///
+
 
 //--------------------- player price calculated ----------------//
 document.getElementById('calculated').addEventListener('click', function () {
