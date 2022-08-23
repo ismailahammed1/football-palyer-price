@@ -1,3 +1,4 @@
+//----------funtion playerName select section--------------///
 const playerarray = [];
 
 // selectedPlayers area
@@ -7,24 +8,11 @@ function displayPlayer(selectedPlayers) {
     // console.log("selectedPlayers");
     const tablelist = document.getElementById('name-list')
     tablelist.innerHTML = '';
-    // if (selectedPlayers.length >= 2) {
-    //     alert('hi');
-    //     return;
-    // } else {
 
-    // }
     for (let i = 0; i < selectedPlayers.length; i++) {
-        // console.log(playerarray[i].playerNames, playerarray[i].playerSkill);
+
         const name = playerarray[i].playerNames;
-        // let length = playerarray[i];
 
-
-        // if (length == 2) {
-        //     console.log('length');
-        //     element.disabled = true
-        // } else {
-        //     console.log('hi');
-        // }
         const tr = document.createElement("tr");
         tr.innerHTML = `
         <th>${i + 1}</th>
@@ -35,6 +23,7 @@ function displayPlayer(selectedPlayers) {
 
     }
 }
+//----------funtion playerName select section--------------///
 //----------funtion playerName--------------///
 function playerName(element) {
 
