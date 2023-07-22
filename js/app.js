@@ -49,35 +49,23 @@ function playerName(element) {
 }
 //----------funtion playerName--------------///
 
-
 //--------------------- player price calculated ----------------//
 document.getElementById('calculated').addEventListener('click', function () {
-    const playerCostInput = document.getElementById('player-cost');
-    const playerCost = playerCostInput.value;
-
-    const totalPlayer = document.getElementById('total-plyer').innerText;
-
+    const playerCostInput = getInputFieldValueById('player-cost');
+    const totalPlayer = getTextElemetnValueById('total-plyer');
     const playerExpenses = document.getElementById('player-expenses');
-
-    const cost = playerCost * totalPlayer;
-
+    const cost = playerCostInput * totalPlayer;
     playerExpenses.innerText = cost;
 })
 
-
-// ----------------price calculated  end----------------//
+//----------------price calculated  end----------------//
 
 // ---------------- total cost calculeted start---------------//
 document.getElementById('total-calculated').addEventListener('click', function () {
-    const managerCostInput = document.getElementById('manager-cost').value;
-    const managerCost = parseInt(managerCostInput);
-    const coachCostInput = document.getElementById('coach-cost').value;
-    const coachCost = parseInt(coachCostInput);
-
-    const playerExpensesInput = document.getElementById('player-expenses').innerText;
-    const playerExpenses = parseInt(playerExpensesInput);
-
+    const managerCostInput = getInputFieldValueById('manager-cost');
+    const coachCostInput = getInputFieldValueById('coach-cost');
+    const playerExpensesInput = getTextElemetnValueById('player-expenses');
     const totalExpenses = document.getElementById('total-expenses');
-    totalExpenses.innerText = playerExpenses + managerCost + coachCost;
+    totalExpenses.innerText = playerExpensesInput + coachCostInput + managerCostInput;
 })
 // ---------------- total cost calculeted end---------------//
